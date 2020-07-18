@@ -25,7 +25,7 @@ const driverSchema = new Schema(
         end_time: Date,
         last_updated: Date,
         kilometers: Number,
-        drivepaths: [{ lat: Number, lng: Number }],
+        drivepaths: [{ latitude: Number, longitude: Number }],
       },
     ],
   },

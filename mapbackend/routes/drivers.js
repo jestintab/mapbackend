@@ -89,7 +89,7 @@ router.route("/endtrip/:id").post((req, res) => {
   const trip_id= req.body.trip_id;
   const location= req.body.location;
   const km = req.body.kilometers;
-  const endtime = req.body.endtime;
+  const endtime = req.body.end_time;
   const drivepaths = req.body.drivepaths;
 
   Driver.findById(req.params.id).then((data) => {
